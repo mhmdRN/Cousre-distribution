@@ -1,3 +1,4 @@
+import React from 'react'
 import 'semantic-ui-css/semantic.min.css'
 import {Switch,BrowserRouter,Route} from 'react-router-dom';
 import Registration from './Registrations/Registrations';

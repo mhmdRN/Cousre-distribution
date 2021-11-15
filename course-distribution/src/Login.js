@@ -4,6 +4,7 @@ import  { useEffect, useState } from 'react'
 import axios from 'axios'
 import cookie from "js-cookies"
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -23,6 +24,7 @@ const INITIAL_USER={
   password:""
 }
 const Login = () => {
+    
   const [user,setUser]=useState(INITIAL_USER);
       const [disabled,setDisabled]=useState(false);
       useEffect(()=>{
@@ -108,7 +110,7 @@ const Login = () => {
             <CssBaseline />
             <Grid item xs={false} sm={4} md={7} className={classes.image} />
             <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
-            <h1>Emial: Admin@gmail.com</h1>
+            <h1>Email: Admin@gmail.com</h1>
             <h1>Password : 03234376x</h1>
                 <div className={classes.paper}>
                     <Avatar className={classes.avatar}>
