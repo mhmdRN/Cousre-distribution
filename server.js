@@ -13,7 +13,7 @@ const {requireAuth}=require("./course-distribution/src/utilities/authMiddleware"
 const cookieparser =require("cookie-parser");
 
 
-const dburl= "mongodb+srv://mydb:93928@cluster0.g0he0.mongodb.net/Course-distribution?retryWrites=true&w=majority";
+const dburl= "mongodb+srv://admin:admin123@cluster0.vynpt.mongodb.net/courseDistribution?retryWrites=true&w=majority";
 mongoose.connect(dburl,{useNewUrlParser:true,useUnifiedTopology:true})
 .then(res=>{
     app.listen(4000);
